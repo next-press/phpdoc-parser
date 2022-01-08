@@ -19,10 +19,12 @@
 	"support"    : {
 		"issues": "https://github.com/WordPress/phpdoc-parser/issues"
 	},
-	{
-            "type": "vcs",
-            "url": "git@github.com:next-press/reflection.git"
-        },
+	"repositories": [
+		{
+		    "type": "vcs",
+		    "url": "git@github.com:next-press/reflection.git"
+		}
+	],
 	"require"    : {
 		"php"                      : ">=5.4",
 		"composer/installers"      : "~1.0",
