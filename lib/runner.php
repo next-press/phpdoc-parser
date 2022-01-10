@@ -48,6 +48,9 @@ function parse_files( $files, $root ) {
 	$output = array();
 
 	foreach ( $files as $filename ) {
+
+		echo PHP_EOL . '→ ' . $filename;
+
 		$file = new File_Reflector( $filename );
 
 		$path = ltrim( substr( $filename, strlen( $root ) ), DIRECTORY_SEPARATOR );
